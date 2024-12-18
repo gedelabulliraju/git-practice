@@ -1,9 +1,11 @@
 #!/bin/bash
-sriram=$[person1]
-Prasad=$[person2]
 
+#declaring of varible
+PERSON1=Sachin #no space between = and value
+PERSON2=Rahul
 
-echo "$[person1] :: hi prasad, how are you?"
-echo "$[person2] :: Hello $[person1]. I am fine. How are you?"
-echo "$[person1] :: I am doing good prasad. what's goging on?"
-echo "$[person2] :: I started learning shell script $[person1]"
+#referring variable
+echo "$PERSON1:: Hello $PERSON2, How are you?"
+echo "${PERSON2}:: Hi $PERSON1, I am fine. How are you?"
+echo "$PERSON1:: I am fine too. how is your work?"
+echo "$PERSON2:: not bad. I am thinking to upgrade to DevOps"
