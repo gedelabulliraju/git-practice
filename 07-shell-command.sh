@@ -1,3 +1,3 @@
-DATE=${date}
+DATE=$(date)
 
 echo "Today date is :${DATE}" 
