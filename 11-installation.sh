@@ -16,7 +16,7 @@ if [ $? -ne 0 ]
 
     else 
     echo "Git is allready installed"
-    exit 1
+    
 fi
 dnf list installed mysql # cheacking install or not
 if [ $? -ne 0 ]
