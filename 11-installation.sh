@@ -18,3 +18,13 @@ if [ $? -ne 0 ]
     echo "Git is allready installed"
     exit 1
 fi
+dnf list installed mysql # cheacking install or not
+if [ $? -ne 0 ]
+    then
+    echo "mysql is not installed going to install"
+    dnf install mysql -y
+
+    else 
+    echo "mysql is allready installed"
+    exit 1
+fi
