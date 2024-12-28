@@ -10,7 +10,7 @@ VALIDATE(){
     then
     echo -e "command is $R failure $N"
     else
-    echo "command is $G success $N"
+    echo -e "command is $G success $N"
     exit 1
 }
 
