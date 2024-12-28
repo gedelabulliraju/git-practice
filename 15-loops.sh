@@ -17,9 +17,9 @@ VALIDATE()
     if [ $1 -ne 0 ]
     then
     echo -e "$2 is $R failure $N"
-    else
-    echo -e "$2 is $G success $N"
     exit 1
+    else
+    echo -e "$2 is $G success $N"    
     fi
 }
 
@@ -33,7 +33,7 @@ dnf list installed $package # Just checking whether installed or not
 if [ $? -ne 0 ]
 then
     echo "$package is not installed, going to install it.."
-    dnf install git -y # here installing
+    dnf install $package -y # here installing
    VALIDATE $? "Installing $package"
 else
     echo -e "$G $package is already installed $N, nothing to do.."
