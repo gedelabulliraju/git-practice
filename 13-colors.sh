@@ -7,7 +7,7 @@ G="\e[32m"
 N="\e[0m"
 VALIDATE(){
     IF [ $? -ne 0 ]
-    then 
+    then
     echo -e "command is $R failure $N"
     else
     echo "command is $G success $N"
